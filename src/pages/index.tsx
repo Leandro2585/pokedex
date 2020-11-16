@@ -35,19 +35,21 @@ const Home: React.FC = () => {
 
   function listen(){
     const utterance = new SpeechSynthesisUtterance();
-    const typeText = details.types.map((item, index) => {
-      const text = item.type.name;
-      if(index === 0){
-        return ' Esse é um pokémon do tipo '+ text;
-      }
-      return 'E também é do tipo '+ text;
-    });
+
     utterance.text = pokemon.name;
 
     utterance.lang = "pt-BR";
     speechSynthesis.speak(utterance);
-    utterance.text = typeText;
-    speechSynthesis.speak(utterance);
+    
+    details.types.map((item, index) => {
+      const text = item.type.name;
+      if(index === 0){
+        utterance.text = ' Esse é um pokémon do tipo '+ text;
+      }
+      utterance.text =  'E também é do tipo '+ text;
+
+      return speechSynthesis.speak(utterance);
+    });
   }
 
 
