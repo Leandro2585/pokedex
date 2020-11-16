@@ -46,7 +46,7 @@ const Home: React.FC = () => {
       if(index === 0){
          let msg1 = ' Esse é um pokémon do tipo '+ text;
          return utterance.text = msg;
-      }else if(index === 1){
+      }else if(item[1] !== undefined){
         let msg2 = 'E também é do tipo '+ text;
         return utterance.text += msg2;
       }
