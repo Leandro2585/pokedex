@@ -13,7 +13,9 @@ interface Pokemon {
 interface Details {
   types: [
       {
-        type: string;
+        type: {
+          name: string;
+        };
       }
   ]
 }
