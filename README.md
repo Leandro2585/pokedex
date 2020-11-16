@@ -14,7 +14,7 @@ Para começar você vai precisar ter as seguintes ferramentas em sua máquina:
 Também precisará de um editor para trabalhar com o código.
 <h2>Home</h2>
 <p align="left">
-      <img src="./assets/pokedex.png" width="80%" alt="Pokedex"/>
+      <img src="./pokedex.png" width="80%" alt="Pokedex"/>
 </p>
 <h2>▶️ Rodando o projeto</h2>
 
