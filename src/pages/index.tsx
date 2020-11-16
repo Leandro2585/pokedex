@@ -51,7 +51,9 @@ const Home: React.FC = () => {
         return msg;
       }
     });
-    utterance.text = message.map(text => text);
+    utterance.text = message.forEach(text => {
+        return text
+    });
     speechSynthesis.speak(utterance);
 
   }
