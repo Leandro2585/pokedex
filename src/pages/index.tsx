@@ -20,7 +20,7 @@ interface Details {
 
 const Home: React.FC = () => {
   const [pokemon, setPokemon] = useState<Pokemon>(null);
-  const [details, setDetails] = useState<Details>([]);
+  const [details, setDetails] = useState<Details>(null);
 
   async function loadPokemon() {
     const randomNumber = Math.round(Math.random() * (150 - 1) + 1);
