@@ -71,4 +71,67 @@ export default createGlobalStyle`
       background: transparent;
       color: rgba(0,0,0,0);
     }
+    @media screen and (max-width: 360px){
+      body {
+        margin: 0;
+      }
+      main{
+        margin:0;
+        width: 99.5vw;
+        height: 97vh;
+        position: relative;
+      }
+      main svg{
+        width: 90%;
+        height: 100%;
+        margin-left: 5%;
+      }
+     main div{
+      width:28vw;
+      height: 10vh;
+      left: 11.2%;
+      top: 43.8%;
+      border-radius: 5px;
+      position: absolute;
+      z-index: 2;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+     }
+     main div img{
+       border: 0;
+       background: transparent;
+       color: rgba(0,0,0,0);
+     }
+     main label{
+       font-size: 16px;
+       opacity: 0.9;
+       position: absolute;
+       top: 48%;
+       left: 60%;
+       font-weight: bold;
+
+       text-transform: uppercase;
+     }
+     main button{
+       position: absolute;
+       background: transparent;
+       border: 0;
+       margin: 0 auto;
+       outline: 0;
+       color: white;
+       font-weight: bold;
+       top: 59.6%;
+       left: 50.5%;
+       width: calc(2 * 36.6px);
+       height: calc(2 * 13px);
+       font-size: 6px;
+       z-index: 2;
+     }
+     main button.listen{
+       top: 59.6%;
+       left: 67%;
+     }
+
+    }
 `;
