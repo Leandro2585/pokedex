@@ -3,9 +3,24 @@ import Head from 'next/head';
 import Pokedex from '../assets/Pokedex.svg';
 import axios from 'axios';
 
+interface Pokemon {
+  name: string;
+  sprites: {
+    front_default: string;
+  }
+}
+
+interface Details {
+  types: [
+      {
+        type: string;
+      }
+  ]
+}
+
 const Home: React.FC = () => {
-  const [pokemon, setPokemon] = useState({});
-  const [details, setDetails] = useState([]);
+  const [pokemon, setPokemon] = useState<Pokemon>({});
+  const [details, setDetails] = useState<Details>([]);
 
   async function loadPokemon() {
     const randomNumber = Math.round(Math.random() * (150 - 1) + 1);
@@ -43,7 +58,7 @@ const Home: React.FC = () => {
 
     <main>
       <Pokedex/>
-      {pokemon !== undefined && (
+      {pokemon !== null && (
         <>
         <div>
         <img src={pokemon.sprites && pokemon.sprites.front_default}/>
