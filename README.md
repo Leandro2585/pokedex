@@ -12,6 +12,7 @@ Essa aplicação é um exemplo simples de interatividade, onde você pode conhec
 Para começar você vai precisar ter as seguintes ferramentas em sua máquina:
 [Git](https://git-scm.com), [Node.js](https://nodejs.org/en/).
 Também precisará de um editor para trabalhar com o código.
+Se quiser visualizar o projeto de uma forma mais simples acesse [Pokedex](https://pokedex-five-red.vercel.app/)
 <h2>Home</h2>
 <p align="left">
       <img src="./pokedex.png" width="80%" alt="Pokedex"/>
