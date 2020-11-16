@@ -99,6 +99,8 @@ export default createGlobalStyle`
       justify-content: center;
      }
      main div img{
+       width:80%;
+       height: auto;
        border: 0;
        background: transparent;
        color: rgba(0,0,0,0);
@@ -121,16 +123,16 @@ export default createGlobalStyle`
        outline: 0;
        color: white;
        font-weight: bold;
-       top: 59.6%;
-       left: 50.5%;
-       width: calc(2 * 36.6px);
-       height: calc(2 * 13px);
+       top: 61%;
+       left: 56%;
+       width: 36.6px;
+       height:13px;
        font-size: 6px;
        z-index: 2;
      }
      main button.listen{
-       top: 59.6%;
-       left: 67%;
+       top: 61%;
+       left: 72%;
      }
 
     }
