@@ -40,16 +40,20 @@ const Home: React.FC = () => {
 
     utterance.lang = "pt-BR";
     speechSynthesis.speak(utterance);
-    
-    details.types.map((item, index) => {
+
+    const message = details.types.map((item, index) => {
       const text = item.type.name;
       if(index === 0){
-        utterance.text = ' Esse é um pokémon do tipo '+ text;
+         let msg = ' Esse é um pokémon do tipo '+ text;
+         return msg;
+      }else{
+        let msg = 'E também é do tipo '+ text;
+        return msg;
       }
-      utterance.text =  'E também é do tipo '+ text;
-
-      return speechSynthesis.speak(utterance);
     });
+    utterance.text = message;
+    speechSynthesis.speak(utterance);
+
   }
 
 
