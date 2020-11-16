@@ -45,13 +45,13 @@ const Home: React.FC = () => {
       const text = item.type.name;
       if(index === 0){
          let msg1 = ' Esse é um pokémon do tipo '+ text;
-         utterance.text = msg;
+         return utterance.text = msg;
       }else if(index === 1){
         let msg2 = 'E também é do tipo '+ text;
-        utterance.text += msg2;
+        return utterance.text += msg2;
       }
-    });
 
+    });
     speechSynthesis.speak(utterance);
 
   }
@@ -66,7 +66,7 @@ const Home: React.FC = () => {
 
     <main>
     <h1>Pokedex</h1>
-    
+
       <Pokedex/>
       {pokemon !== null && (
         <>
