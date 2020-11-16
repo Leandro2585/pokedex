@@ -44,14 +44,14 @@ const Home: React.FC = () => {
     const message = details.types.map((item, index) => {
       const text = item.type.name;
       if(index === 0){
-         let msg = ' Esse é um pokémon do tipo '+ text;
-         return msg;
+         let msg1 = ' Esse é um pokémon do tipo '+ text;
+         utterance.text = msg;
       }else{
-        let msg = 'E também é do tipo '+ text;
-        return msg;
+        let msg2 = 'E também é do tipo '+ text;
+        utterance.text = utterance.text + msg2;
       }
     });
-    utterance.text = message[0] + (message[1] && message[1]);
+
     speechSynthesis.speak(utterance);
 
   }
