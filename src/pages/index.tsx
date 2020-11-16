@@ -48,7 +48,7 @@ const Home: React.FC = () => {
          utterance.text = msg;
       }else{
         let msg2 = 'E também é do tipo '+ text;
-        utterance.text = utterance.text + msg2;
+        utterance.text += msg2;
       }
     });
 
