@@ -104,7 +104,7 @@ export default createGlobalStyle`
        color: rgba(0,0,0,0);
      }
      main label{
-       font-size: 16px;
+       font-size: 12px;
        opacity: 0.9;
        position: absolute;
        top: 48%;
