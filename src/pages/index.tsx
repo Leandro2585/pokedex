@@ -19,7 +19,7 @@ interface Details {
 }
 
 const Home: React.FC = () => {
-  const [pokemon, setPokemon] = useState<Pokemon>({});
+  const [pokemon, setPokemon] = useState<Pokemon>(null);
   const [details, setDetails] = useState<Details>([]);
 
   async function loadPokemon() {
