@@ -59,6 +59,7 @@ const Home: React.FC = () => {
 
   return (
   <div>
+  <h1>Pokedex</h1>
     <Head>
       <title>Pokedex</title>
       <link rel="icon" href="/favicon.ico" />
